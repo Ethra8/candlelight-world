@@ -50,7 +50,9 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_bootstrap5',
     'crispy_forms',
-    'worlds'
+    'worlds',
+    'about',
+    'bookings',
 ]
 
 
