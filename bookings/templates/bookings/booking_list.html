@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+<h1>My Bookings</h1>
+<ul>
+{% for booking in object_list %}
+    <li>{{booking.room}}: {{ booking.date }} - {{ booking.start_time }} <a href="{% url 'booking_update' booking.pk %}">UPDATE</a></li>
+{% empty %}
+    <li>No bookings to display yet.</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
