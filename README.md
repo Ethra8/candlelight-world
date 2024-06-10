@@ -1,6 +1,7 @@
 # CANDLELIGHT WORLDS - RESTAURANT
 
 ## PROJECT OVERVIEW
+**N.B.: This project is still under work, and I'm looking forward for the resubmission. Any constructive feedback would be much appreciated.**
 
 - A booking site for a restaurant that offers out-of-the-box romantic dinners. This new concept involves private rooms carefully decorated to transport our guests to different times and places, all under immersive candlelight lighting.
 - These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed, so that the couples can relax and chill after dinner.
