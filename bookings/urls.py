@@ -3,4 +3,5 @@ from .views import CreateBookingView
 
 urlpatterns = [
     path('bookings/new/', CreateBookingView.as_view(), name='booking_new'),
+    path('bookings/create, ')
 ]

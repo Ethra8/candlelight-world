@@ -2,14 +2,17 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<h1>BOOK NOW!</h1>
+<div id="booking-form">
+  <h1>BOOKING FORM</h1>
 
-<form method="post">
-    {{ form | crispy }}
-    {% csrf_token %}
-    <button type="submit" class="btn btn-secondary btn-lg btn-card submit-btn"
-    id="book-button">Submit</button>
-  </form>
+  <form method="post">
+      {{ form | crispy }}
+      {% csrf_token %}
+      <button type="submit" class="btn btn-secondary btn-lg btn-card submit-btn"
+      id="book-button">BOOK NOW</button>
+    </form>
+  
+</div>
 
 
 {% endblock %}

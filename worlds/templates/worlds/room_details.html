@@ -6,15 +6,19 @@
     <div class="container">
         <div class="row g-0">
             {% if room.image %}
-            <div class="col-md-6 masthead-text">
+            <div class="col-md-6 col-sm-12 masthead-text">
                 <!-- Room display_name goes in these h1 tags -->
-                <h1 class="room-name">{{ room.display_name }}</h1>
+                <h1>{{ room.display_name }}</h1>
                 <!-- Room description -->
                 {{ room.description | safe }}
                 
-                <div class=""><img src="{{ room.image.url}}" alt="" class="scale"></div>
-              
+                <div class="row">
+                    <div class="col-lg-12 scale"><img src="{{ room.image.url}}" alt="image of the dinning area" style="width:100%; height:fit-content"></div>
+                    <div class="col-lg-12 scale"><img src="{{ room.image_dinning.url}}" alt="image of the bedroom" style="width:100%; height:fit-content"></div>
+                    <div class="col-lg-12 scale"><img src="{{ room.image_extra.url}}" alt="image of the jakuzzi" style="width:100%; height:fit-content"></div>
+                </div>
             </div>
+
             {% else %}
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/candlelight_worlds.jpg' %}" class="scale" alt="placeholder">

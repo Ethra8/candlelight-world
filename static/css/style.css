@@ -3,6 +3,14 @@ body {
     background-color: #F9FAFC;
 }
 
+#booking-form {
+    padding: 5% 15%;
+}
+
+#booking-form h1 {
+    padding-bottom: 40px;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -39,19 +47,20 @@ body {
     position: relative;
 }
 
-/* .image-flash {
+.image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
     background-color: #188181;
-} */
+} 
 
 .scale {
-    height: 250px;
-    width: 250px;
+    position: relative;
+    height: 250px !important;
+    width: 250px !important;
     vertical-align: middle;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .display_name {
@@ -65,14 +74,15 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    /* height: 30vh; */
     width: 100%;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #191a1b;
     color: white;
     position: relative;
+    padding: 50px;
 }
 
 .masthead-image {
@@ -108,11 +118,6 @@ body {
 .post-link:hover,
 .page-link {
     color: #E84610;
-}
-
-.room-name {
-    margin-top: 10%;
-    margin-left: 5%;
 }
 
 .room-description {

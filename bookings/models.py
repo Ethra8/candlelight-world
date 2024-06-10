@@ -16,4 +16,4 @@ class Booking(models.Model):
     room = models.ForeignKey('worlds.Room', on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'Booking {self.id} - {self.user.username} - {self.table.display_name} - {self.date} - {self.get_start_time_display()}'
+        return f'Booking {self.id} - {self.user.username} - {self.room.display_name} - {self.date} - {self.get_start_time_display()}'
