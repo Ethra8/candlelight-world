@@ -6,7 +6,7 @@ from .models import Room
 
 @admin.register(Room)
 class RoomAdmin(SummernoteModelAdmin):
-    list_display = ('id', 'slug', 'image', 'category', 'description')
-    prepopulated_fields = {'slug': ('category',)}
-    search_fields = ['category', 'id']
+    list_display = ('id', 'slug', 'image', 'category', 'display_name', 'description')
+    prepopulated_fields = {'slug': ('display_name',)}
+    search_fields = ['category']
     summernote_fields = ('description')

@@ -48,8 +48,10 @@ body {
 }
 
 .scale {
-    width: 100%;
-    height: auto;
+    height: 250px;
+    width: 250px;
+    vertical-align: middle;
+    object-fit: cover;
 }
 
 .author {
@@ -95,6 +97,7 @@ body {
 
 .profile-image {
     width: 75%;
+    margin: 40px auto;
 }
 
 .post-link {
@@ -107,12 +110,12 @@ body {
     color: #E84610;
 }
 
-.post-title {
+.room-name {
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.post-subtitle {
+.room-description {
     margin-left: 5%;
     color: lightgray;
 }

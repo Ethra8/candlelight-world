@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            {% if room.image %}
+            <div class="col-md-6 masthead-text">
+                <!-- Room display_name goes in these h1 tags -->
+                <h1 class="room-name">{{ room.display_name }}</h1>
+                <!-- Room description -->
+                {{ room.description | safe }}
+                
+                <div class="d-none d-md-block col-md-6 masthead-image"><img src="{{ room.image.url}}" alt="" class="scale"></div>
+              
+            </div>
+            {% else %}
+            <div class="d-none d-md-block col-md-6 masthead-image">
+                <img src="{% static 'images/candlelight_worlds.jpg' %}" class="scale" alt="placeholder">
+            </div>
+            {% endif %}
+
+            <a href="{% url 'booking_new' %}" class="btn btn-secondary btn-sm btn-card book-button">Book Now!</a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}
+
+{% block extras %}
+<!-- <script src="{% static 'js/comments.js' %}"></script> -->
+{% endblock %}
