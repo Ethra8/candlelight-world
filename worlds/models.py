@@ -13,11 +13,11 @@ class Room(models.Model):
     )
 
     EXPERIENCE_DISPLAY = (
-        ('MEDCAS', 'MEDIEVAL CASTLE'),
-        ('RENVIL', 'RENAISSANCE VILLA'),
-        ('VICMAN', 'VICTORIAN MANSION'),
-        ('DRACAS', 'DRACULA CASTLE'),
-        ('FAIFOR', 'FAIRY FOREST'),
+        ('medieval-castle', 'MEDIEVAL CASTLE'),
+        ('renaissance-villa', 'RENAISSANCE VILLA'),
+        ('victorian-mansion', 'VICTORIAN MANSION'),
+        ('dracula-castle', 'DRACULA CASTLE'),
+        ('fairy-forest', 'FAIRY FOREST'),
     )
     
     display_name = models.CharField(max_length=100, choices=EXPERIENCE_DISPLAY)
