@@ -25,6 +25,8 @@ class Room(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField()
     image = CloudinaryField('image')
+    image_dinning = CloudinaryField('image')
+    image_extra = CloudinaryField('image')
     
     
     def __str__(self):

@@ -29,5 +29,10 @@ Edna Torres Munill
 
 ### CREDITS
 
+#### IMAGES
+
 - [Hero image](https://www.freepik.com/free-photo/couple-having-dinner-valentines-day_6412178.htm#query=dinner%20candlelight&position=32&from_view=keyword&track=ais&uuid=0b778147-a7c9-4ab5-a148-ddd91935661c) by [Freepik](https://www.freepik.com/author/freepik) at [Freepik](https://www.freepik.com/)
+- [Medieval Castle Bedroom](https://in.pinterest.com/pin/823525481846848314/)
+- [Italian Renaissance Villa - Dinning Area](https://www.pinterest.es/pin/145100419219410839/) from [Homes of the Rich](https://homesoftherich.net/2008/11/italian-renaissance-villa-in-california/) at [Pinterest](https://www.pinterest.com)
+- [Italian Renaissance Villa - Bedroom](https://homesoftherichest.wordpress.com/wp-content/uploads/2008/11/sanjuan9.jpg)
 - [Dungeon Room](https://images.trvl-media.com/lodging/97000000/96670000/96662600/96662507/e042fa2a.jpg?impolicy=resizecrop&rw=1200&ra=fit) from [The Cove at Salem](https://uk.hotels.com/ho3094200224/the-cove-at-salem-salem-united-states-of-america/) at [uk.hotels.com](https://uk.hotels.com/ho3094200224/the-cove-at-salem-salem-united-states-of-america/)
