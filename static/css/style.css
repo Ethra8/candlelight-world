@@ -3,12 +3,40 @@ body {
     background-color: #F9FAFC;
 }
 
-#booking-form {
+.form {
     padding: 5% 15%;
 }
 
-#booking-form h1 {
+#booking-form h1,
+#booking-list h1 {
     padding-bottom: 40px;
+}
+
+#booking-list {
+    padding: 5%;
+    border: #191a1b;
+    border-style: outset;
+    border-width: 2px;
+    margin: 5% auto;
+    width: 80%;
+}
+
+.booking-list-object {
+    margin: 20px;
+}
+
+.update {
+    text-decoration: none;
+    background-color: rgb(255, 255, 47);
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.delete {
+    text-decoration: none;
+    background-color: rgb(255, 85, 47);
+    margin: 10px;
+    padding: 5px 10px;
 }
 
 .brand {

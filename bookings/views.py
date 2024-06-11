@@ -2,7 +2,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, reverse
-from django.views.generic.edit import CreateView, UpdateView
+from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
 from .models import Booking
 from .forms import BookingForm
@@ -33,7 +34,7 @@ class CreateBookingView(LoginRequiredMixin, CreateView):
 
 class BookingListView(LoginRequiredMixin, ListView):
     model = Booking
-    paginate_by = 1000 # if pagination is desired
+    # paginate_by = 1000 # if pagination is desired
 
     def get_queryset(self, **kwargs):
        qs = super().get_queryset(**kwargs)
@@ -46,7 +47,7 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
     template_name_suffix = "_update_form"
 
     def form_valid(self, form):
-        # need to make sure that object that we're updating was created by logged-in user
+        # LOGIC NOT WORKING: need to make sure that object that we're updating was created by logged-in user
         if form.instance.user != self.request.user:
             messages.warning(self.request, 'You can only update your own bookings!')
             return redirect(reverse('booking_list'))
@@ -65,3 +66,22 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
             messages.success(self.request, "Your booking's changes are confirmed!")
             temp_booking.save()
         return redirect(reverse('home'))
+
+
+
+class BookingDeleteView(LoginRequiredMixin, DeleteView):
+    model = Booking
+    template = 'bookings/booking_confirm_delete.html'
+
+    def delete(request, *args, **kwargs):   
+        success_url = "booking_list"
+        messages.success(self.request, "Your booking has been deleted.")
+        
+
+        # def form_valid(self, form):
+        #     existing_bookings = Booking.objects\
+        #         .filter(date=temp_booking.date)\
+        #         .filter(start_time=temp_booking.start_time)\
+        #         .filter(room=temp_booking.room)
+                
+        # return redirect(reverse('home'))

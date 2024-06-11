@@ -2,10 +2,12 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<form method="post">
-    {% csrf_token %}
-    {{ form | crispy }}
-    <input type="submit" value="Update">
-</form>
+<div class="form">
+    <form method="post">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <input type="submit" value="Update">
+    </form>
+</div>
 
 {% endblock %}
